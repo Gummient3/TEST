@@ -1,0 +1,47 @@
+<!doctype html> 
+<html> 
+<head> 
+<title>color/background</title>
+<script>
+var count = 0;
+var count2 = 0;
+function ch() {
+var x = document.getElementById('text');
+count = count + 1;
+if (count==1) {x.style.color = "red";}
+else if (count==2) {x.style.color = "orange";}
+else if (count==3) {x.style.color = "yellow";}
+else if (count==4) {x.style.color = "green";}
+else if (count==5) {x.style.color = "blue";}
+else if (count==6) {x.style.color = "purple";}
+else if (count==7) {count = 0;x.style.color = "white";}
+}
+function ch2() {
+var x = document.getElementById('div');
+count2 = count2 + 1;
+if (count2==1) {x.style.background = "red";}
+else if (count2==2) {x.style.background = "orange";}
+else if (count2==3) {x.style.background = "yellow";}
+else if (count2==4) {x.style.background = "green";}
+else if (count2==5) {x.style.background = "blue";}
+else if (count2==6) {x.style.background = "purple";}
+else if (count2==7) {count2 = 0;x.style.background = "white";}
+}
+</script>
+<style> #div {
+background-color: pink;
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+</style>
+</head>
+<body> 
+<div id="div"> 
+<button onclick="ch()"> change colour </button>
+<button onclick="ch2()"> change background </button>
+<h1 id ="text"> color </h1>
+</div>
+</body> 
+</html> 
